@@ -12,10 +12,19 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Text="Leftover space"
+        <Label Text="Hej tak to je hustý &lt;3"
                Grid.Row="0" Grid.Column="0"
+               FontSize="40"
                TextColor="Black"
-               BackgroundColor="CadetBlue"
+               BackgroundColor="Gray"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+        
+        <Label Text="Nejvíc"
+               Grid.Row="1" Grid.Column="0"
+               FontSize="40"
+               TextColor="Black"
+               BackgroundColor="Green"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
 
