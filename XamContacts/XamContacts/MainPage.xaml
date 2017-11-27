@@ -3,32 +3,106 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamContacts"
              x:Class="XamContacts.MainPage">
-    <Grid>
+    <Grid ColumnSpacing="0"
+         Margin="20,0,20,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Text="Hej tak to je hustý &lt;3"
+        <Image Source="avatar.png"
                Grid.Row="0" Grid.Column="0"
-               FontSize="40"
-               TextColor="Black"
-               BackgroundColor="Gray"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-        
-        <Label Text="Nejvíc"
+               Scale="2.2"
+               Margin="0,95,0,100"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"
+               />
+
+        <Grid
                Grid.Row="1" Grid.Column="0"
-               FontSize="40"
-               TextColor="Black"
-               BackgroundColor="Green"
+               ColumnSpacing="20"
+               >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="6*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Jan Převrátil"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               VerticalOptions="Start"
                HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+               VerticalTextAlignment="Center"
+               FontSize="35"/>
 
+            <Image Source="call.png"
+               Grid.Row="1" Grid.Column="0"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" />
 
+            <Label Text="+420 776 101 436"
+               Grid.Row="1" Grid.Column="1"
+               VerticalOptions="Start"
+               VerticalTextAlignment="Center"
+               FontSize="25"/>
+
+            <Image Source="mail.png"
+               Grid.Row="2" Grid.Column="0"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" />
+
+            <Label Text="honzaprevratil&#64;seznam.cz"
+               Grid.Row="2" Grid.Column="1"
+               VerticalOptions="Start"
+               VerticalTextAlignment="Center"
+               FontSize="20"/>
+
+            <Grid
+                Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Call"
+                    Grid.Row="0" Grid.Column="0"
+                    FontSize="30"
+                    BackgroundColor="LimeGreen"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+                <Button Text="SMS"
+                    Grid.Row="0" Grid.Column="1"
+                    FontSize="30"
+                    BackgroundColor="Aqua"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+                <Button Text="Email"
+                    Grid.Row="0" Grid.Column="2"
+                    FontSize="30"
+                    BackgroundColor="Aqua"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+            </Grid>
+        </Grid>
     </Grid>
 
 </ContentPage>
