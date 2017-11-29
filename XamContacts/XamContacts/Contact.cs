@@ -10,5 +10,7 @@ namespace XamContacts
     {
         public string DisplayName { get; set; }
         public string Image { get; set; }
+        public string Number { get; set; }
+
     }
 }
